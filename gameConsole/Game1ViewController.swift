@@ -21,55 +21,66 @@ class Game1ViewController: UIViewController {
     
     // Color Buttons
     // These buttons need to call the checkColor
+    // The argument or parameter needs to be the
+    // color. For example for red we would write
+    // checkColor("red")
     @IBAction func redButton(sender: AnyObject) {
-        checkColor("red")
+      
         
     }
     
     // Same thing here
     @IBAction func blueButton(sender: AnyObject) {
-        checkColor("blue")
+       
         
     }
     @IBAction func greenButton(sender: AnyObject) {
-        checkColor("green")
-        
-    }
-    @IBAction func yellowButton(sender: AnyObject) {
-        checkColor("yellow")
         
     }
     
+    // You need to connect the yellow button
+    // to this function.
+    @IBAction func yellowButton(sender: AnyObject) {
+       
+        
+    }
+    
+    //!! UNCOMMENT THIS CODE WHEN YOU ARE READY !!
+    // Tip to uncomment delete /* and */
+    
     // This function creates a random integer named colorInt
-    // It then checks using if statements, if else statements
+    // Color int is a number 1-4.
+    // It then checks the color using if statements, if else statements
     // and else statements. It then sets the color label to the
     // correct.
-      func newColor() -> Void {
+    func newColor() -> Void {
+        /*
         var colorInt = Int(arc4random_uniform(4))+1
         
         if colorInt == 1 {
             color = "red"
         }
-        else if colorInt == 2 {
-            color = "blue"
-        }
-        else if colorInt == 3 {
-            color = "green"
-        }
+        else if {
+                  }
+        else if {
+                  }
         else {
-            color = "yellow"
+           
         }
         
+        // This sets the label to the color that is
+        // selected.
         colorLabel.text = color
+ */
     }
     
     
-    // This function uses an if statement to check if the button
-    // pressed colors matches the color called "color"
+    // This function uses an if statement to check if the parameter buttonColor
+    // matches the String called "color"
+    // If the buttonColor == color call the newColor
+    // funciton
     func checkColor(buttonColor:String) -> Void {
-        if buttonColor == color {
-            newColor()
-        }
+        
     }
     
     
@@ -84,7 +95,7 @@ class Game1ViewController: UIViewController {
     }
     
     override func didReceiveMemoryWarning() {
-           super.didReceiveMemoryWarning()
+        super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     

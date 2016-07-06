@@ -31,7 +31,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="hT3-AU-8mt" kind="show" identifier="segueToGame1" id="PJR-vl-hVR"/>
+                                            <segue destination="hT3-AU-8mt" kind="show" id="PJR-vl-hVR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IG-QD-LLT">
@@ -45,7 +45,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="7jF-vm-dPD" kind="show" identifier="SegueToGame2" id="YQr-hE-LAK"/>
+                                            <segue destination="7jF-vm-dPD" kind="show" id="YQr-hE-LAK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -151,6 +151,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="yellowButton:" destination="hT3-AU-8mt" eventType="touchUpInside" id="jO6-5B-gdT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
